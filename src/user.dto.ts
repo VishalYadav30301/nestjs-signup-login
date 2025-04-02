@@ -14,8 +14,9 @@ export class CreateUserDto{
  password:string;
 
  @IsPhoneNumber()
- @IsNotEmpty()
- mobileNumber: any;
+ @IsOptional()
+ mobileNumber: string;
+ 
 }
 
 export class LoginUserDto{
